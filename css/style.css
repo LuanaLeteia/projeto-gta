@@ -1,0 +1,33 @@
+body{
+    background-color: #0d0d1a;
+    color: #ffffff;
+    font-family: 'Questrial', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu-conteudo{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8px 32px;
+}
+
+.menu-logo{
+    font-family: 'Oswald', sans-serif;
+    font-size: 29px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 61, 139, 0.5);
+}
+
+.capa-video{
+    display: none;
+}
