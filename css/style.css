@@ -31,3 +31,38 @@ body{
 .capa-video{
     display: none;
 }
+
+.capa{
+    background-color: blue;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 40px;
+}
+
+.capa-conteudo{
+    background-color: red;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0 8px;
+}
+
+.capa-moldura{
+    background-color: green;
+    max-width: 900px;
+    width: 90%;
+    border-radius: 12px;
+}
+
+.capa-imagem{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
