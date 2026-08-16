@@ -331,3 +331,35 @@ body{
 .rodape-classificacao a{
     color: #c4c0d8;
 }
+
+@media (max-width: 700px){
+    .capa-barra-conteudo{
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .capa-lancamento, .capa-plataformas{
+        text-align: center;
+    }
+    
+    .lista-plataformas{
+        justify-content: center;
+    }
+
+    .card-video-conteudo{
+        aspect-ratio: 4/5;
+        background-position: 30% center;
+    }
+}
+
+.aparecer{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-in-out;
+}
+
+.aparecer .visivel{
+    opacity: 1;
+    transform: translateY(0);
+}
