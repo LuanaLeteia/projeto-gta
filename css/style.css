@@ -33,7 +33,6 @@ body{
 }
 
 .capa{
-    background-color: blue;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -45,7 +44,6 @@ body{
 }
 
 .capa-conteudo{
-    background-color: red;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -54,7 +52,6 @@ body{
 }
 
 .capa-moldura{
-    background-color: green;
     max-width: 900px;
     width: 90%;
     border-radius: 12px;
@@ -78,7 +75,6 @@ body{
 }
 
 .botao-primario{
-    background-color: #ff3d8b;
     color: #ffffff;
     cursor: pointer;
 }
@@ -86,4 +82,61 @@ body{
 .botao-primario:hover{
     box-shadow: 0 0 28px rgba(255, 61, 139, 0.65);
     transform: translateY(-3px);
+}
+
+.capa-barra{
+    background-color: rgba(13, 13, 26, 0.85);
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 20px 0;
+    position: relative;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+}
+
+.capa-barra-conteudo{
+    max-width: 900px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.capa-lancamento{
+    flex: 1;
+}
+
+.capa-plataformas{
+    flex: 1;
+    text-align: right;
+}
+
+.capa-rotulo{
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6e6e85;
+    margin-bottom: 8px;
+}
+
+.capa-data{
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.lista-plataformas{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end
+    gap: 8px;
+    color: #c4c0d8;
+}
+
+.texto-plataforma{
+    font-size: 14px;
+    font-weigth: 700;
 }
