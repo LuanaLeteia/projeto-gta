@@ -62,6 +62,17 @@ function animarCapa(){
         duration: 1,
         ease: "none"
     }, 0);
+
+    linhaDoTempo.to(".capa-conteudo, .capa-barra, .capa-seta", {
+        opacity: 1,
+        scale: 1,
+        duration: 0.2
+    }, 1);
+
+    linhaDoTempo.to(video, {
+        opacity: 0,
+        duration: 0.2
+    }, 1);
 };
 
 if (video.readyState >= 1){
