@@ -9,10 +9,27 @@ window.addEventListener("scroll", function(){
     } else{
         menu.classList.remove("menu-rolado");
     }
-
-    
 })
 
+
 // INTERAÇÃO DOS BLOCOS
+
+const blocos = document.querySelectorAll(".aparecer");
+
+const observador = new IntersectionObserver(function (entradas){
+    entradas.forEach(function(entrada){
+
+        if(entrada.isIntersecting){
+            entrada.target.classList.add("visivel");
+        }
+
+    })
+});
+
+blocos.forEach(function(bloco){
+    observador.observe(bloco);
+});
+
+
 
 // INTERAÇÃO VIDEO COM O SCROLL

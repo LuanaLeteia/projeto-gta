@@ -364,7 +364,7 @@ body{
     transition: all 1s ease-in-out;
 }
 
-.aparecer .visivel{
+.aparecer.visivel{
     opacity: 1;
     transform: translateY(0);
 }
